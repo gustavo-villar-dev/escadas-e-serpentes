@@ -10,7 +10,7 @@
 #define MAG "\x1B[35m"
 #define CYN "\x1B[36m"
 #define WHT "\x1B[37m"
-#define R   "\x1B[0m"
+#define RESET   "\x1B[0m"
 
 
 
@@ -42,18 +42,18 @@ int main(void){
         printf(" |    __)_ /  ___// ___\\\\__  \\   / __ |\\__  \\  /  ___/    _/ __ \\ \n");
         printf(" |        \\\\___ \\\\  \\___ / __ \\_/ /_/ | / __ \\_\\___ \\     \\  ___/ \n");
         printf("/_______  /____  >\\___  >____  /\\____ |(____  /____  >     \\___  >\n");
-        printf("        \\/     \\/     \\/     \\/      \\/     \\/     \\/          \\/ \n\n" R);
+        printf("        \\/     \\/     \\/     \\/      \\/     \\/     \\/          \\/ \n\n" RESET);
 
         printf(GRN"  ______ _________________   ____   _____/  |_  ____   ______\n");
         printf(" /  ___// __ \\_  __ \\____ \\_/ __ \\ /    \\   __\\/ __ \\ /  ___/\n");
         printf(" \\___ \\   ___/|  | \\/  |_> >  ___/|   |  \\  | \\  ___/ \\___ \\ \n");
         printf("/____  >\\___  >__|  |   __/ \\___  >___|  /__|  \\___  >____  >\n");
-        printf("     \\/     \\/      |__|        \\/     \\/          \\/     \\/ \n"R);
+        printf("     \\/     \\/      |__|        \\/     \\/          \\/     \\/ \n"RESET);
 
-        printf(YEL"\n\n-------------------------------------------------------------------\n\n"R);
-        printf("["RED "1" R "] - Jogar\n");
-        printf("["RED "2" R "] - Regras\n");
-        printf("["RED "3" R "] - Encerrar\n\n");
+        printf(YEL"\n\n-------------------------------------------------------------------\n\n"RESET);
+        printf("["RED "1" RESET "] - Jogar\n");
+        printf("["RED "2" RESET "] - Regras\n");
+        printf("["RED "3" RESET "] - Encerrar\n\n");
         scanf("%d", &escolha);
         fflush(stdout);
 
@@ -98,22 +98,22 @@ void regras(){
         printf(" |    __)_ /  ___// ___\\\\__  \\   / __ |\\__  \\  /  ___/    _/ __ \\ \n");
         printf(" |        \\\\___ \\\\  \\___ / __ \\_/ /_/ | / __ \\_\\___ \\     \\  ___/ \n");
         printf("/_______  /____  >\\___  >____  /\\____ |(____  /____  >     \\___  >\n");
-        printf("        \\/     \\/     \\/     \\/      \\/     \\/     \\/          \\/ \n\n" R);
+        printf("        \\/     \\/     \\/     \\/      \\/     \\/     \\/          \\/ \n\n" RESET);
 
         printf(GRN"  ______ _________________   ____   _____/  |_  ____   ______\n");
         printf(" /  ___// __ \\_  __ \\____ \\_/ __ \\ /    \\   __\\/ __ \\ /  ___/\n");
         printf(" \\___ \\   ___/|  | \\/  |_> >  ___/|   |  \\  | \\  ___/ \\___ \\ \n");
         printf("/____  >\\___  >__|  |   __/ \\___  >___|  /__|  \\___  >____  >\n");
-        printf("     \\/     \\/      |__|        \\/     \\/          \\/     \\/ \n"R);
+        printf("     \\/     \\/      |__|        \\/     \\/          \\/     \\/ \n"RESET);
 
-        printf(YEL"\n\n-------------------------------------------------------------------\n\n"R);
+        printf(YEL"\n\n-------------------------------------------------------------------\n\n"RESET);
         printf("Ganha quem chegar primeiro na casa 100.\n");
         printf("A partida acontece entre dois jogadores, que tomam turnos aos dados.\n");
         printf("O dado representa o numero de casas que o jogador vai percorrer.\n");
         printf("Se o valor for \"6\" o dado é rolado novamente, e jogador anda a soma.\n"); 
         printf("Se o jogador cai em uma casa de início de escada, ele pode escala-la.\n");
         printf("Se o jogador cai em uma casa de cabeça de serpente, ele escorrega nela.\n");
-        printf("\nPressione "YEL"ENTER"R " para voltar.\n");
+        printf("\nPressione "YEL"ENTER"RESET " para voltar.\n");
         fflush(stdout);
         getchar();
         getchar();
@@ -146,15 +146,15 @@ void jogo(){
         printf(" |    __)_ /  ___// ___\\\\__  \\   / __ |\\__  \\  /  ___/    _/ __ \\ \n");
         printf(" |        \\\\___ \\\\  \\___ / __ \\_/ /_/ | / __ \\_\\___ \\     \\  ___/ \n");
         printf("/_______  /____  >\\___  >____  /\\____ |(____  /____  >     \\___  >\n");
-        printf("        \\/     \\/     \\/     \\/      \\/     \\/     \\/          \\/ \n\n" R);
+        printf("        \\/     \\/     \\/     \\/      \\/     \\/     \\/          \\/ \n\n" RESET);
 
         printf(GRN"  ______ _________________   ____   _____/  |_  ____   ______\n");
         printf(" /  ___// __ \\_  __ \\____ \\_/ __ \\ /    \\   __\\/ __ \\ /  ___/\n");
         printf(" \\___ \\   ___/|  | \\/  |_> >  ___/|   |  \\  | \\  ___/ \\___ \\ \n");
         printf("/____  >\\___  >__|  |   __/ \\___  >___|  /__|  \\___  >____  >\n");
-        printf("     \\/     \\/      |__|        \\/     \\/          \\/     \\/ \n"R);
+        printf("     \\/     \\/      |__|        \\/     \\/          \\/     \\/ \n"RESET);
 
-        printf(YEL"\n\n-------------------------------------------------------------------\n\n"R);
+        printf(YEL"\n\n-------------------------------------------------------------------\n\n"RESET);
     printf("\nInsira o nome do jogador 1: ");
     scanf("%s", nome1);
     fflush(stdin);
@@ -179,25 +179,25 @@ void jogo(){
             printf("    |    |/  _ \\ / ___\\__  \\   / __ |/  _ \\_  __ \\  |   |\n");
             printf("/\\__|    (  <_> ) /_/  > __ \\_/ /_/ (  <_> )  | \\/  |   |\n");
             printf("\\________|\\____/\\___  (______/\\_____|\\____/|__|     |___|\n");
-            printf("               /_____/                                   \n"R);
+            printf("               /_____/                                   \n"RESET);
             
             printf("\n%s: %d\n%s: %d\n",nome1, posA, nome2, posB);
 
             tabuleiro(posA, posB);
-            printf("\nPressione "YEL"ENTER"R" para rolar o dado!");
+            printf("\nPressione " YEL "ENTER" RESET " para rolar o dado!");
             fflush(stdout);
             getchar();
             
             numeroSorteado = dado();
             if(numeroSorteado == 6){
-                printf("\nVocê tirou "RED"6"R", role o dado novamente.\n");
-                    printf("\nPressione "YEL"ENTER"R"!");
+                printf("\nVocê tirou "RED"6"RESET", role o dado novamente.\n");
+                    printf("\nPressione "YEL"ENTER"RESET"!");
                     fflush(stdout);
                     getchar();
                 jogadaAdicional = dado();
                 numeroSorteado += jogadaAdicional;
             }
-            printf("Você andou o total de "RED"%d"R" casas.\n", numeroSorteado);
+            printf("Você andou o total de "RED"%d"RESET" casas.\n", numeroSorteado);
             posA += numeroSorteado;
             
             if(posA == 100){
@@ -215,25 +215,25 @@ void jogo(){
             printf("    |    |/  _ \\ / ___\\__  \\   / __ |/  _ \\_  __ \\  /  ____/ \n");
             printf("/\\__|    (  <_> ) /_/  > __ \\_/ /_/ (  <_> )  | \\/ /       \\ \n");
             printf("\\________|\\____/\\___  (______/\\_____|\\____/|__|    \\_______ \\\n");
-            printf("               /_____/                                     \\/\n"R);
+            printf("               /_____/                                     \\/\n"RESET);
             
             printf("\n%s: %d\n%s: %d\n",nome1, posA, nome2, posB);
 
             tabuleiro(posA, posB);
-            printf("\nPressione "YEL"ENTER"R" para rolar o dado!");
+            printf("\nPressione "YEL"ENTER"RESET" para rolar o dado!");
             fflush(stdout);
             getchar();
             
             numeroSorteado = dado();
             if(numeroSorteado == 6){
-                printf("\nVocê tirou "RED"6"R", role o dado novamente.\n");
-                    printf("\nPressione "YEL"ENTER"R"!");
+                printf("\nVocê tirou "RED"6"RESET", role o dado novamente.\n");
+                    printf("\nPressione "YEL"ENTER"RESET"!");
                     fflush(stdout);
                     getchar();  
                 jogadaAdicional = dado();
                 numeroSorteado += jogadaAdicional;
             }
-            printf("Você andou o total de "RED"%d"R" casas.\n", numeroSorteado);
+            printf("Você andou o total de "RED"%d"RESET" casas.\n", numeroSorteado);
             posB += numeroSorteado;
             if(posB == 100){
                 gameState = 2;
@@ -254,95 +254,95 @@ void jogo(){
         switch(posA){
             /*escadas*/
             case 3:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posA = 24;
                 break;
             case 7:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posA = 34;
                 break;
             case 12:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posA = 31;
                 break;
             case 44:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posA = 64;
                 break;
             case 41:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posA = 79;
                 break;
             case 51:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posA = 90;
                 break;
             case 74:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posA = 93;
                 break;
 
             /* casa maior que 100 */
             case 101:
-                printf(RED"\nVocê bateu na casa 100 e voltou uma casa!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou uma casa!\n"RESET);
                 posA = 99;
                 break;
             case 102:
-                printf(RED"\nVocê bateu na casa 100 e voltou duas casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou duas casas!\n"RESET);
                 posA = 98;
                 break;
             case 103:
-                printf(RED"\nVocê bateu na casa 100, voltou três casas e escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê bateu na casa 100, voltou três casas e escorregou numa serpente :(\n"RESET);
                 posA = 65;
                 break;
             case 104:
-                printf(RED"\nVocê bateu na casa 100 e voltou quatro casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou quatro casas!\n"RESET);
                 posA = 96;
                 break;
             case 105:
-                printf(RED"\nVocê bateu na casa 100 e voltou cinco casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou cinco casas!\n"RESET);
                 posA = 95;
                 break;
             case 106:
-                printf(RED"\nVocê bateu na casa 100 e voltou seis casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou seis casas!\n"RESET);
                 posA = 94;
                 break;
             case 107:
-                printf(RED"\nVocê bateu na casa 100 e voltou sete casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou sete casas!\n"RESET);
                 posA = 93;
                 break;
             case 108:
-                printf(RED"\nVocê bateu na casa 100 e voltou oito casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou oito casas!\n"RESET);
                 posA = 92;
                 break;
             case 109:
-                printf(RED"\nVocê bateu na casa 100 e voltou nove casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou nove casas!\n"RESET);
                 posA = 91;
                 break;
             case 110:
-                printf(RED"\nVocê bateu na casa 100 e voltou dez casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou dez casas!\n"RESET);
                 posA = 90;
                 break;
             case 111:
-                printf(RED"\nVocê bateu na casa 100 e voltou onze casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou onze casas!\n"RESET);
                 posA = 89;
                 break;
 
             /*serpentes*/
             case 36:
-                printf(RED"\nVocê escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê escorregou numa serpente :(\n"RESET);
                 posA = 5;
                 break;
             case 53:
-                printf(RED"\nVocê escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê escorregou numa serpente :(\n"RESET);
                 posA = 29;
                 break;
             case 82:
-                printf(RED"\nVocê escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê escorregou numa serpente :(\n"RESET);
                 posA = 58;
                 break;
             case 97:
-                printf(RED"\nVocê escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê escorregou numa serpente :(\n"RESET);
                 posA = 65;
                 break;
         }
@@ -350,95 +350,95 @@ void jogo(){
         switch(posB){
             /*escadas*/
             case 3:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posB = 24;
                 break;
             case 7:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posB = 34;
                 break;
             case 12:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posB = 31;
                 break;
             case 44:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posB = 64;
                 break;
             case 41:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posB = 79;
                 break;
             case 51:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posB = 90;
                 break;
             case 74:
-                printf(GRN"\nVocê subiu uma escada!\n"R);
+                printf(GRN"\nVocê subiu uma escada!\n"RESET);
                 posB = 93;
                 break;
 
             /* casa maior que 100 */
             case 101:
-                printf(RED"\nVocê bateu na casa 100 e voltou uma casa!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou uma casa!\n"RESET);
                 posB = 99;
                 break;
             case 102:
-                printf(RED"\nVocê bateu na casa 100 e voltou duas casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou duas casas!\n"RESET);
                 posB = 98;
                 break;
             case 103:
-                printf(RED"\nVocê bateu na casa 100, voltou três casas e escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê bateu na casa 100, voltou três casas e escorregou numa serpente :(\n"RESET);
                 posB = 65;
                 break;
             case 104:
-                printf(RED"\nVocê bateu na casa 100 e voltou quatro casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou quatro casas!\n"RESET);
                 posB = 96;
                 break;
             case 105:
-                printf(RED"\nVocê bateu na casa 100 e voltou cinco casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou cinco casas!\n"RESET);
                 posB = 95;
                 break;
             case 106:
-                printf(RED"\nVocê bateu na casa 100 e voltou seis casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou seis casas!\n"RESET);
                 posB = 94;
                 break;
             case 107:
-                printf(RED"\nVocê bateu na casa 100 e voltou sete casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou sete casas!\n"RESET);
                 posB = 93;
                 break;
             case 108:
-                printf(RED"\nVocê bateu na casa 100 e voltou oito casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou oito casas!\n"RESET);
                 posB = 92;
                 break;
             case 109:
-                printf(RED"\nVocê bateu na casa 100 e voltou nove casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou nove casas!\n"RESET);
                 posB = 91;
                 break;
             case 110:
-                printf(RED"\nVocê bateu na casa 100 e voltou dez casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou dez casas!\n"RESET);
                 posB = 90;
                 break;
             case 111:
-                printf(RED"\nVocê bateu na casa 100 e voltou onze casas!\n"R);
+                printf(RED"\nVocê bateu na casa 100 e voltou onze casas!\n"RESET);
                 posB = 89;
                 break;
 
             /*serpentes*/
             case 36:
-                printf(RED"\nVocê escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê escorregou numa serpente :(\n"RESET);
                 posB = 5;
                 break;
             case 53:
-                printf(RED"\nVocê escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê escorregou numa serpente :(\n"RESET);
                 posB = 29;
                 break;
             case 82:
-                printf(RED"\nVocê escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê escorregou numa serpente :(\n"RESET);
                 posB = 58;
                 break;
             case 97:
-                printf(RED"\nVocê escorregou numa serpente :(\n"R);
+                printf(RED"\nVocê escorregou numa serpente :(\n"RESET);
                 posB = 65;
                 break;
         }
@@ -575,7 +575,7 @@ void tabuleiro(int posA, int posB){
     printf(" |------|------|---/-/|------|--"GRN"**"YEL"--|------|--|-|-|------|------|------|\n");
     printf(" |"WHT"1"YEL"     |"WHT"2"YEL"     |"WHT"3"YEL" /-/ |"WHT"4"YEL"     |"WHT"5"YEL"  "GRN"**"YEL" |"WHT"6"YEL"     |"WHT"7"YEL" |-| |"WHT"8"YEL"     |"WHT"9"YEL"     |"WHT"10"YEL"    |\n");
     printf(" |%c %c   |%c %c   |%c %c   |%c %c   |%c %c   |%c %c   |%c %c   |%c %c   |%c %c   |%c %c   |\n",v('A', posA, 1),v('B', posB, 1),v('A', posA, 2),v('B', posB, 2),v('A', posA, 3),v('B', posB, 3),v('A', posA, 4),v('B', posB, 4),v('A', posA, 5),v('B', posB, 5),v('A', posA, 6),v('B', posB, 6),v('A', posA, 7),v('B', posB, 7),v('A', posA, 8),v('B', posB, 8),v('A', posA, 9),v('B', posB, 9),v('A', posA, 10),v('B', posB, 10));
-    printf(" |------|------|------|------|------|------|------|------|------|------|\n"R);
+    printf(" |------|------|------|------|------|------|------|------|------|------|\n"RESET);
     printf("\n");
 }
 
@@ -618,17 +618,17 @@ void mostraVitoria(char nome[]){
         printf(" |    __)_ /  ___// ___\\\\__  \\   / __ |\\__  \\  /  ___/    _/ __ \\ \n");
         printf(" |        \\\\___ \\\\  \\___ / __ \\_/ /_/ | / __ \\_\\___ \\     \\  ___/ \n");
         printf("/_______  /____  >\\___  >____  /\\____ |(____  /____  >     \\___  >\n");
-        printf("        \\/     \\/     \\/     \\/      \\/     \\/     \\/          \\/ \n\n" R);
+        printf("        \\/     \\/     \\/     \\/      \\/     \\/     \\/          \\/ \n\n" RESET);
 
         printf(GRN"  ______ _________________   ____   _____/  |_  ____   ______\n");
         printf(" /  ___// __ \\_  __ \\____ \\_/ __ \\ /    \\   __\\/ __ \\ /  ___/\n");
         printf(" \\___ \\   ___/|  | \\/  |_> >  ___/|   |  \\  | \\  ___/ \\___ \\ \n");
         printf("/____  >\\___  >__|  |   __/ \\___  >___|  /__|  \\___  >____  >\n");
-        printf("     \\/     \\/      |__|        \\/     \\/          \\/     \\/ \n"R);
+        printf("     \\/     \\/      |__|        \\/     \\/          \\/     \\/ \n"RESET);
 
-        printf(YEL"\n\n-------------------------------------------------------------------\n\n"R);
+        printf(YEL"\n\n-------------------------------------------------------------------\n\n"RESET);
 
-        printf(RED"\t\t\t%s é o campeão!\n\n"R,nome);
+        printf(RED"\t\t\t%s é o campeão!\n\n"RESET,nome);
         printf(YEL"\t\t\t .-=========-.\n");
         printf("\t\t\t \\'-=======-'/\n");
         printf("\t\t\t _|   .=.   |_\n");
@@ -636,7 +636,7 @@ void mostraVitoria(char nome[]){
         printf("\t\t\t \\|   /|\\   |/\n");
         printf("\t\t\t    _`) (`_\n");
         printf("\t\t\t  _/_______\\_\n");
-        printf("\t\t\t /___________\\\n"R);
+        printf("\t\t\t /___________\\\n"RESET);
 
         fflush(stdout);
         getchar();
