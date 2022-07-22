@@ -14,6 +14,6 @@ UFRJ | Universidade Federal do Rio de Janeiro.
 ## Compilar
 O arquivo escadaseserpentes.c é a versão adequada para todos os sistemas operacionais.
 
-gcc escadaseserpentes.c -O2 -pipe -o escadaseserpentes
+gcc escadaseserpentes.c -pipe -o escadaseserpentes
 
 
