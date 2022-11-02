@@ -17,3 +17,5 @@ O arquivo escadaseserpentes.c é a versão adequada para todos os sistemas opera
 gcc escadaseserpentes.c -pipe -o escadaseserpentes
 
 
+![escadas-e-serpentes](https://user-images.githubusercontent.com/105249607/199549913-1c570fb9-c13b-4b49-8c7e-be70586e1fd4.JPG)
+![escadas-e-serpentes-2](https://user-images.githubusercontent.com/105249607/199549920-c90606e3-2dc1-4784-971d-a0fe8f82f838.JPG)
